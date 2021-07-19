@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn node js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>URL Loading Checker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+    
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap');
+        </style>
+   
+  
+</head>
+
+<body>
+    <header>
+        <h3>URL Loading Checker</h3>
+    </header>
+    <div class="main">
+        <div id="content">
+        <form action="http://localhost:3000/example" method="POST" id="my_form">
+            <input type="text"  id="task" placeholder="Add a URL here" class="g1" autocomplete="false" name="add_url">
+            <input type="submit" class="g1" id="add" value="ADD">
+        </form>
+        
+     <form action="http://localhost:3000/status" method="GET">
+        <button  type="submit" class="g1" id="status">CHECK STATUS</button>
+     </form>
+     
+    </div>
+    <div id="my-web-urls">
+       {+div /}
+        <!-- <div id="my-head-row" class="my_url">
+            <div class="url_name">URL Name</div>
+            <div class="url_name">Operation</div>
+            <div class="url_name status_box">Status</div>
+        </div> -->
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

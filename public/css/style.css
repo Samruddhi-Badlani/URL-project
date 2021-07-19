@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    /* background-color: antiquewhite; */
+}
+/* Selecting the header section */
+header{
+    padding: 3%;
+    background: radial-gradient(grey,black);
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+.main{
+    padding: 2%;
+    display: block;
+    /* width: 700px; */
+    margin: auto;
+}
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#list{
+    list-style: decimal;
+}
+.g1{
+    text-align: center;
+    padding: 10px;
+    margin:10px;
+
+   
+    border:3px solid black;
+    background-color: whitesmoke;
+}
+#add{
+    background-color: turquoise;
+    border:3px solid darkslategray;
+    cursor: pointer;
+    width: 80px;
+}
+#my-web-urls{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top:7px;
+   
+}
+.my_url{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+    margin:4px;
+  
+    
+}
+.url_name{
+    display: flex;
+    flex-wrap: wrap;
+    flex:50%;
+    padding: 1px;
+    margin: 1px;
+    background-color: white;
+
+
+}
+#my-head-row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgba(182, 178, 175, 1);
+}
+
+.del-btn{
+    padding: 10px;
+    margin: 10px;
+  
+}
+.status-box{
+    padding: 10px;
+    margin: 10px;
+   
+  
+    
+}
+.edit-button{
+    background: white;
+    padding-top: 5px;
+    border: 0px;
+    padding: 10px;
+    margin: 10px;
+  
+}
+
+.url-box{
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    width: 500px;
+    border: 1px solid whitesmoke;
+    margin: 10px;
+}
+/* //on.innerHTML = '<i class="fa fa-close" style="font-size:48px;color:red"></i>'; RED CROSS/
+/* delete_button.innerText = "\u2705" green mark; */

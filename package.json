@@ -1,0 +1,21 @@
+{
+  "name": "web-learn",
+  "version": "1.0.0",
+  "description": "It is a project made to learn node js express and dynamic pages",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samruddhi Badlani",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "consolidate": "*",
+    "dust": "*",
+    "dustjs-helpers": "*",
+    "dustjs-linkedin": "*",
+    "express": "*",
+    "node-uptime": "^3.0.0",
+    "pg": "*"
+  }
+}

@@ -1,0 +1,39 @@
+{>"layot" /}
+
+{<div} {#urls} <div class="my_url">
+    <form action="http://localhost:3000/edit" method="POST">
+        <div id={id} >
+            <input name="edited_url_id" type="number" value="{id}" style="display: none;">
+            <input class="url-box"  name="edited_url" type="text" value="{url_name}">
+        <button type="submit" class="edit-button"><i  class="fa fa-pencil-square-o url_name" aria-hidden="true" style="font-size:28px"></i></button>
+    </div>
+    </form>
+    
+    {@select key=status }
+    {@eq value="running"}<div ><span class="glyphicon glyphicon-ok status-box"
+            style="font-size:24px;color:green "></span></i></div>{/eq}
+    {@eq value="closing"}<div class="status-box" ><i class="fa fa-close " style="font-size:24px;color:red"></i></div>{/eq}
+    {@default}<div class="status-box"><i class="fa fa-close" style="font-size:24px;color:red"></i></div>{/default}
+    {/select}
+
+
+
+    <form action="http://localhost:3000/del" method="POST" id="my_form">
+        <input type="number" id="task" placeholder="Add a URL here" name="url_delete" style="display: none;"
+            value="{id}">
+        <button type="submit" id="del" class="del-btn"><i class="fa fa-trash" aria-hidden="true" style="font-size:24px"></i></button>
+    </form>
+    <!-- <div class="del_btn" action=""><i class="fa fa-trash" aria-hidden="true" style="font-size:28px"></i></div> -->
+
+    <!-- <input type="number"  id="task" placeholder="Add a URL here"  name="url_edit" style="display: none;" value="{id}"> -->
+    <!-- <form class="edit-button" action="http://localhost:3000/edit" method="POST" >
+        <input type="number" name="url_id"  style="display:  none;">
+        <div ><button type="submit"><i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size:24px"></i></button></div>
+       
+    </form> -->
+
+    </div>
+    {/urls}
+    {/div}
+    <!-- /* //on.innerHTML = '<i class="fa fa-close" style="font-size:48px;color:red"></i>'; RED CROSS/
+/* delete_button.innerText = "\u2705" green mark; */ -->
